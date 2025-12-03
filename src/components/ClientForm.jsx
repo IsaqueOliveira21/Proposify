@@ -55,9 +55,6 @@ const ClientForm = () => {
                     />
                 </div>
             </div>
-            <div className="mb-3 flex w-full justify-center items-center">
-                <button className="bg-blue-600 text-white px-5 py-2 rounded-xl cursor-pointer hover:bg-blue-700 transition-all duration-300 shadow-lg">Salvar</button>
-            </div>
         </div>
     );
 }

@@ -1,6 +1,6 @@
-# **ProposifyX — Gerador de Propostas Profissionais**
+# **Proposify — Gerador de Propostas Profissionais**
 
-ProposifyX é uma ferramenta moderna e intuitiva para criação de propostas comerciais personalizadas em poucos minutos.  
+Proposify é uma ferramenta moderna e intuitiva para criação de propostas comerciais personalizadas em poucos minutos.  
 Desenvolvido com **React**, **Redux Toolkit** e **TailwindCSS**, o sistema permite montar propostas completas, visualizar prévia em tempo real e (em breve) exportar em PDF com aspecto profissional.
 
 ---
@@ -12,10 +12,10 @@ Desenvolvido com **React**, **Redux Toolkit** e **TailwindCSS**, o sistema permi
 - 💰 Cálculo automático do valor total  
 - 🎨 Tema claro/escuro com toggle interativo  
 - 📦 Gerenciamento global de estado com Redux Toolkit  
-- 👀 Prévia em tempo real da proposta (WIP – Dia 4)  
-- 📄 Exportação em PDF profissional (WIP – Dia 5)  
+- 👀 Prévia em tempo real da proposta
+- 📄 Exportação em PDF profissional
 - 💾 Persistência via `localStorage`  
-- ⚡ Interface moderna com TailwindCSS  
+- ⚡ Interface moderna com TailwindCSS
 
 ---
 
@@ -26,5 +26,3 @@ Desenvolvido com **React**, **Redux Toolkit** e **TailwindCSS**, o sistema permi
 - **TailwindCSS**  
 - **React Hook Form**  
 - **pdf-lib**  
-
----
