@@ -2,21 +2,21 @@ import { useSelector, useDispatch } from "react-redux";
 import { switchTheme } from "../redux/proposalSlice";
 
 const ThemeSelector = () => {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    const theme = useSelector(state => state.proposal.theme);
+  const theme = useSelector((state) => state.proposal.theme);
 
-    return (
-        <div className="w-full bg-gray-200 rounded-lg px-4 py-2">
-            <h2 className="mb-4 text-blue-600 font-semibold">Tema ({theme})</h2>
-            <label className="inline-flex items-center cursor-pointer">
-                <input
-                    type="checkbox"
-                    className="sr-only peer"
-                    checked={theme  === "dark"}
-                    onChange={() => dispatch(switchTheme())}
-                />
-                <div className="relative w-9 h-5 
+  return (
+    <div className="bg-gray-200 rounded-lg px-4 py-2 flex items-center">
+      <label className="inline-flex items-center cursor-pointer">
+        <input
+          type="checkbox"
+          className="sr-only peer"
+          checked={theme === "dark"}
+          onChange={() => dispatch(switchTheme())}
+        />
+        <div
+          className="relative w-9 h-5 
                     bg-gray-300
                     peer-checked:bg-blue-600
                     peer-focus:outline-none 
@@ -36,13 +36,14 @@ const ThemeSelector = () => {
                     after:h-4 
                     after:w-4 
                     after:transition-all
-                "></div>
-                <span className="select-none ms-3 text-sm font-medium text-heading">
-                    Modo Escuro
-                </span>
-            </label>
-        </div>
-    );
-}
+                "
+        ></div>
+        <span className="select-none ms-3 text-sm font-medium text-heading">
+          Modo Escuro
+        </span>
+      </label>
+    </div>
+  );
+};
 
-export default ThemeSelector
+export default ThemeSelector;
