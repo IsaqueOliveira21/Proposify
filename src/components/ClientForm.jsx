@@ -19,14 +19,12 @@ const ClientForm = () => {
   return (
     <div
       className={`${
-        theme == "dark"
-          ? "bg-slate-900 border-white"
-          : "bg-gray-100 border-blue-600"
+        theme == "dark" ? "bg-slate-800" : "bg-gray-100 border-blue-600"
       } w-full border rounded-2xl p-4`}
     >
       <h2
         className={`${
-          theme == "dark" ? "text-white" : "text-blue-600"
+          theme == "dark" ? "text-gray-300" : "text-blue-600"
         } font-semibold text-lg mb-3`}
       >
         Informações do Cliente
@@ -35,7 +33,7 @@ const ClientForm = () => {
         <div>
           <label
             className={`${
-              theme == "dark" ? "text-white" : "text-blue-600"
+              theme == "dark" ? "text-gray-400" : "text-blue-600"
             }  font-semibold`}
             htmlFor="company"
           >
@@ -46,7 +44,7 @@ const ClientForm = () => {
             id="company"
             className={`${
               theme == "dark"
-                ? "outline-white focus:outline-gray-200 text-white"
+                ? "outline-gray-500 text-white bg-gray-700"
                 : "outline-blue-600 focus:outline-blue-600"
             } w-full outline-1 rounded-xl px-4 py-2 focus:outline-2`}
             value={client.company}
@@ -56,7 +54,7 @@ const ClientForm = () => {
         <div>
           <label
             className={`${
-              theme == "dark" ? "text-white" : "text-blue-600"
+              theme == "dark" ? "text-gray-400" : "text-blue-600"
             }  font-semibold`}
             htmlFor="name"
           >
@@ -67,7 +65,7 @@ const ClientForm = () => {
             id="name"
             className={`${
               theme == "dark"
-                ? "outline-white focus:outline-gray-200 text-white"
+                ? "outline-gray-500 bg-gray-700 text-white"
                 : "outline-blue-600 focus:outline-blue-600"
             } w-full outline-1 rounded-xl px-5 py-2 focus:outline-2`}
             value={client.name}
@@ -79,7 +77,7 @@ const ClientForm = () => {
         <div className="col-span-1">
           <label
             className={`${
-              theme == "dark" ? "text-white" : "text-blue-600"
+              theme == "dark" ? "text-gray-400" : "text-blue-600"
             }  font-semibold`}
             htmlFor="email"
           >
@@ -90,9 +88,9 @@ const ClientForm = () => {
             id="email"
             className={`${
               theme == "dark"
-                ? "outline-white focus:outline-gray-200 text-white"
+                ? "outline-gray-500 text-white bg-gray-700"
                 : "outline-blue-600 focus:outline-blue-600"
-            } w-full outline-1  rounded-xl px-5 py-2 focus:outline-2 `}
+            } w-full outline-1 rounded-xl px-5 py-2 focus:outline-2 `}
             value={client.email}
             onChange={(e) => handleChange("email", e.target.value)}
           />
@@ -100,7 +98,7 @@ const ClientForm = () => {
         <div className="col-span-1">
           <label
             className={`${
-              theme == "dark" ? "text-white" : "text-blue-600"
+              theme == "dark" ? "text-gray-400" : "text-blue-600"
             }  font-semibold`}
             htmlFor="phone"
           >
@@ -111,7 +109,7 @@ const ClientForm = () => {
             id="phone"
             className={`${
               theme == "dark"
-                ? "outline-white focus:outline-gray-200 text-white"
+                ? "outline-gray-500 bg-gray-700 text-white"
                 : "outline-blue-600 focus:outline-blue-600"
             } w-full outline-1 rounded-xl px-5 py-2 focus:outline-2`}
             value={client.phone}

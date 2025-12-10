@@ -12,7 +12,7 @@ const PriceSummary = () => {
   return (
     <div
       className={`${
-        theme == "dark" ? "bg-slate-900 text-white" : "bg-gray-300"
+        theme == "dark" ? "bg-slate-800 text-gray-300" : "bg-gray-300"
       } w-full px-4 py-2 shadow-lg rounded-lg`}
     >
       <p className="font-bold">Total: R$ {total.toFixed(2)}</p>

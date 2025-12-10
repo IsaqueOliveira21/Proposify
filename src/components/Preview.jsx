@@ -28,15 +28,13 @@ const Preview = () => {
     html2pdf().set(options).from(el).save();
   };
 
-  // ---- TEMA CORRIGIDO (SEM OKLCH) ----
-  const containerStyle =
-    theme === "dark"
-      ? "bg-[#0f172a] text-[#ffffff]" // slate-900 (hex) + white
-      : "bg-[#ffffff] text-[#111827]"; // white + gray-900
-
   return (
     <div>
-      <div className={`${containerStyle} p-6 rounded-xl shadow-xl`}>
+      <div
+        className={`${
+          theme == "dark" ? "bg-gray-800 text-white" : "bg-white text-gray-900"
+        } p-6 rounded-xl shadow-xl`}
+      >
         <div className="flex justify-center items-center">
           <h2 className="md:text-xl text-md font-bold">
             {clientInfo.company

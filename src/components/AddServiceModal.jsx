@@ -30,14 +30,12 @@ const AddServiceModal = () => {
   return (
     <div
       className={`${
-        theme == "dark"
-          ? "bg-slate-900 border-white"
-          : "bg-gray-200 border-blue-600"
+        theme == "dark" ? "bg-slate-800" : "bg-gray-200 border-blue-600"
       } w-full p-4 mb-4 border rounded-2xl shadow-lg`}
     >
       <h2
         className={`${
-          theme == "dark" ? "text-white" : "text-blue-600"
+          theme == "dark" ? "text-gray-300" : "text-blue-600"
         } font-semibold text-lg mb-3`}
       >
         Novo Serviço
@@ -49,7 +47,7 @@ const AddServiceModal = () => {
             placeholder="Título..."
             className={`${
               theme == "dark"
-                ? "text-white outline-white"
+                ? "text-white outline-gray-500 bg-gray-700"
                 : "text-blue-600 outline-blue-600"
             } w-full px-5 py-2 outline-1 rounded-xl focus:outline-2`}
             value={title}
@@ -62,7 +60,7 @@ const AddServiceModal = () => {
             placeholder="R$ 0,00"
             className={`${
               theme == "dark"
-                ? "text-white outline-white"
+                ? "text-white outline-gray-500 bg-gray-700"
                 : "text-blue-600 outline-blue-600"
             } w-full px-5 py-2 outline-1 rounded-xl focus:outline-2`}
             value={price}
@@ -75,7 +73,7 @@ const AddServiceModal = () => {
           placeholder="Descrição..."
           className={`${
             theme == "dark"
-              ? "text-white outline-white"
+              ? "text-white outline-gray-500 bg-gray-700"
               : "text-blue-600 outline-blue-600"
           } w-full px-5 py-2 outline-1 rounded-xl focus:outline-2 placeholder:text-gray-400`}
           value={description}

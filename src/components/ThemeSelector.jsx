@@ -7,7 +7,7 @@ const ThemeSelector = () => {
   const theme = useSelector((state) => state.proposal.theme);
 
   return (
-    <div className="bg-gray-200 rounded-lg px-4 py-2 flex items-center">
+    <div className="rounded-lg px-4 py-2 flex items-center">
       <label className="inline-flex items-center cursor-pointer">
         <input
           type="checkbox"
@@ -18,7 +18,7 @@ const ThemeSelector = () => {
         <div
           className="relative w-9 h-5 
                     bg-gray-300
-                    peer-checked:bg-blue-600
+                    peer-checked:bg-blue-400
                     peer-focus:outline-none 
                     peer-focus:ring-brand-soft 
                     dark:peer-focus:ring-brand-soft 
@@ -38,9 +38,6 @@ const ThemeSelector = () => {
                     after:transition-all
                 "
         ></div>
-        <span className="select-none ms-3 text-sm font-medium text-heading">
-          Modo Escuro
-        </span>
       </label>
     </div>
   );

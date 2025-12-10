@@ -10,14 +10,12 @@ const ServiceList = () => {
   return (
     <div
       className={`${
-        theme == "dark"
-          ? "bg-slate-900 border-white"
-          : "bg-gray-100 border-blue-600"
+        theme == "dark" ? "bg-slate-800" : "bg-gray-100 border-blue-600"
       } w-ful border rounded-2xl p-4`}
     >
       <h2
         className={`${
-          theme == "dark" ? "text-white" : "text-blue-600"
+          theme == "dark" ? "text-gray-300" : "text-blue-600"
         }  font-semibold text-lg mb-3`}
       >
         Lista de Serviços
@@ -34,21 +32,21 @@ const ServiceList = () => {
               <div>
                 <p
                   className={`${
-                    theme == "dark" ? "text-gray-100" : ""
+                    theme == "dark" ? "text-gray-300" : ""
                   } font-semibold`}
                 >
                   {service.title}
                 </p>
                 <p
                   className={`${
-                    theme == "dark" ? "text-gray-200" : "text-gray-700"
+                    theme == "dark" ? "text-gray-400" : "text-gray-700"
                   } text-sm`}
                 >
                   {service.description}
                 </p>
                 <p
                   className={`${
-                    theme == "dark" ? "text-gray-100" : ""
+                    theme == "dark" ? "text-gray-300" : ""
                   } font-bold mt-1`}
                 >
                   R$ {Number(service.price).toFixed(2)}
@@ -57,9 +55,9 @@ const ServiceList = () => {
 
               <button
                 onClick={() => dispatch(removeService(service.id))}
-                className="bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700 transition-all flex justify-center items-center cursor-pointer"
+                className="bg-red-600 text-white px-2 py-1 rounded-lg hover:bg-red-700 transition-all flex justify-center items-center cursor-pointer"
               >
-                x
+                <i className="bi bi-x"></i>
               </button>
             </div>
           ))

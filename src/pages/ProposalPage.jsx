@@ -5,21 +5,22 @@ import ClientForm from "../components/ClientForm";
 import AddServiceModal from "../components/AddServiceModal";
 import ServiceList from "../components/ServiceList";
 import PriceSummary from "../components/PriceSummary";
-import ThemeSelector from "../components/ThemeSelector";
 import Preview from "../components/Preview";
+import ConfigDropdown from "../components/ConfigDropdown";
+import ThemeSelector from "../components/ThemeSelector";
 
 const ProposalPage = () => {
   const { theme } = useSelector((state) => state.proposal);
 
   return (
-    <div className={`${theme == "dark" ? "bg-slate-800" : "bg-white"}`}>
-      <div className="w-full p-8 text-center bg-blue-600 md:flex md:justify-between md:items-center shadow-lg">
+    <div className={`${theme == "dark" ? "bg-slate-900" : "bg-white"}`}>
+      <div className="w-full p-8 text-center bg-blue-600 flex justify-between items-center shadow-lg">
         <div className="md:w-1/3"></div>
 
         <h2 className="font-bold text-white text-2xl">Proposify</h2>
 
-        <div className="md:w-1/3 flex md:justify-end justify-center md:mt-0 mt-3">
-          <ThemeSelector />
+        <div className="md:w-1/3 flex md:justify-end md:mt-0">
+          <ConfigDropdown />
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5">
