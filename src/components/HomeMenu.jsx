@@ -22,7 +22,7 @@ const HomeMenu = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://github.com/IsaqueOliveira21/Proposify"
                 className="text-white font-semibold hover:text-gray-200"
               >
                 Github
@@ -64,7 +64,7 @@ const HomeMenu = () => {
             <a href="/#sobre">Sobre</a>
           </li>
           <li>
-            <a href="#">Github</a>
+            <a href="https://github.com/IsaqueOliveira21/Proposify">Github</a>
           </li>
           <li>
             <Link
