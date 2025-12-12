@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 // Components
 import ClientForm from "../components/ClientForm";
@@ -17,7 +18,9 @@ const ProposalPage = () => {
       <div className="w-full p-8 text-center bg-blue-600 flex justify-between items-center shadow-lg">
         <div className="md:w-1/3"></div>
 
-        <h2 className="font-bold text-white text-2xl">Proposify</h2>
+        <h2 className="font-bold text-white text-2xl">
+          <Link to={"/"}>Proposify</Link>
+        </h2>
 
         <div className="md:w-1/3 flex md:justify-end md:mt-0">
           <ConfigDropdown />
